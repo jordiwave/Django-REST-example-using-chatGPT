@@ -1,0 +1,14 @@
+# Prompt used in chatGPT to generate the code and explain changes needed in the configuration files
+
+# Prompt-1
+You are a Python developer working in a Linux operating system. Just respond with the commands needed in the following sentences. It is not necessary to explain the commands
+Create a virtual environment
+Install the following packages in the new python virtual environment: django and djangorestframework
+Create a new Django project named restful01
+Create a new Django application named toys
+Create a .gitignore file in the root of the virtual environment to avoid the repository tracks venv and __pycache__ directories
+Add the command to track restful01 directory and .gitignore file in an existing git repository
+Push the changes to origin (main branch)
+Now, explain the changes needed in the configuration files
+
+
