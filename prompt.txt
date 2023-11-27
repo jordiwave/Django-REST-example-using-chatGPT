@@ -1,6 +1,6 @@
 # Prompt used in chatGPT to generate the code and explain changes needed in the configuration files
 
-# Prompt-1
+# Prompt-1 (Create Django project and application within a Python virtual environment)
 You are a Python developer working in a Linux operating system. Just respond with the commands needed in the following sentences. It is not necessary to explain the commands
 Create a virtual environment
 Install the following packages in the new python virtual environment: django and djangorestframework
@@ -11,4 +11,17 @@ Add the command to track restful01 directory and .gitignore file in an existing 
 Push the changes to origin (main branch)
 Now, explain the changes needed in the configuration files
 
+# Prompt-2 (Create Toy table in a sqlite3 database using a Django's model)
+Create a Django model named Toy. Just write the code to create the model. The model's fields are:
+created: DateTime auto
+name: varchar(150) blank=false default=''
+description: varchar(250) blank=true default=''
+toy_category: varchar(200) blank=false default=''
+release_date: DateTime 
+was_included_in_home: bool default=false
+Order the model by name
+Next (sqlite3 file database is named db.sqlite3):
+Write the Django commands to create Toy table in the database
+Write the sqlite3 command to see all tables in the database
+Write the sqlite3 command to see all records from Toy model
 
